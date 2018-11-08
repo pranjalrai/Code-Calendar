@@ -1,4 +1,5 @@
 #This snippet of code collects details of upcoming and present contests from Codechef and stores it into a file named 'codechef.txt'
+#on local machine.
 
 
 from bs4 import BeautifulSoup
