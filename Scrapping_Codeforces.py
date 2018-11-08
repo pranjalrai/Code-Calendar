@@ -1,3 +1,8 @@
+#This snippet of code collects details of upcoming and present contests from Codeforces and stores it into a file named 'codeforces.txt'
+#on local machine.
+
+
+
 from bs4 import BeautifulSoup
 import urllib.request
 import requests
