@@ -1,6 +1,12 @@
 #This snippet of code Retrieves data of contests from the file 'codechef.txt' stored on the local system and arranges it in form
 #of a list dictionaries where each dictionary corresponds to a single contest.
 
+from flask import Flask, render_template
+app = Flask(__name__)
+
+
+
+
 contest_list = []
 
 with open('codechef.txt','r') as f:
@@ -34,10 +40,27 @@ with open('codechef.txt','r') as f:
 
 
 
-for contest in contest_list:
-    for det in contest:
-        print (det,end=' '), print(contest[det])
-    print("\n")
+
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template('home.html', contest_list=contest_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
