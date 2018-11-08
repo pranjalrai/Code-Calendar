@@ -1,5 +1,9 @@
 #This snippet of code Retrieves data of contests from the file 'codechef.txt' stored on the local system and arranges it in form
-#of a list dictionaries where each dictionary corresponds to a single contest.
+#of a list dictionaries where each dictionary corresponds to a single contest and then using post mehtod entire data is parsed to 
+#html file where a snippet of code displays this data in form of a html web page
+
+
+
 
 from flask import Flask, render_template
 app = Flask(__name__)
