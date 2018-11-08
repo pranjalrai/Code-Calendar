@@ -1,4 +1,5 @@
-
+#This snippet of code Retrieves data of contests from the file stored on the local system and arranges it in form of a 
+list of dictionaries where each dictionary corresponds to a single contest.
 
 contest_list = []
 
