@@ -1,8 +1,5 @@
 #This snippet of code Retrieves data of contests from the file 'codechef.txt' stored on the local system and arranges it in form
-a 
-
-list 
-#of dictionaries where each dictionary corresponds to a single contest.
+#of a list dictionaries where each dictionary corresponds to a single contest.
 
 contest_list = []
 
