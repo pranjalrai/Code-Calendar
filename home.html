@@ -5,27 +5,32 @@
 <html>
 <head>
    <title>title</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <h1>Contest Details</h1>
-	 <br>
-	
+     <caption><h1>Contest Details</h1></caption>
+	 <table border="1">
+	 <thread>
+	 <tr>
+	 <th>CONTEST CODE</th>
+	 <th>CONTEST NAME</th>
+	 <th scope="col" colspan="1">CONTEST LINK</th>
+	 <th>START TIME</th>
+	 </tr>
+	 </thread>
+	 <tbody>
     {% for contest in contest_list %}
-	
-	    <h3>Contest Code : {{ contest.contest_code }}</h3>
-		<h3>Contest Name : {{ contest.contest_name }}</h3>
-		<a href={{contest.contest_link}}>Go to Contest</a>
-		<h3>start time : {{ contest.contest_start }}</h3>
-		<h3>End time : {{ contest.contest_end }}</h3>
-		<br>
-		<br>
-		<br>
-	
+	<tr>
+	    <td><h3>{{ contest.contest_code }}</h3></td>
+		<td><h3>{{ contest.contest_name }}</h3></td>
+		<td><a href={{contest.contest_link}}>Go to Contest</a></td>
+		<td><h3>{{ contest.contest_start }}</h3></td>
+	</tr>
 	{% endfor %}
+	</tbody>
+	</table>
 </body>
 </html>
-
-
 
 
