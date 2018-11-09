@@ -4,19 +4,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>title</title>
-   <link rel="stylesheet" href="style.css">
+<style>
+table {
+    width: 100%;
+}
+table, td, th {
+    border: 2px solid green;
+}
+th {
+    padding: 15px;
+}
+</style>
 </head>
-
+   <title>CODE CALENDAR</title>
 <body>
      <caption><h1>Contest Details</h1></caption>
 	 <table border="1">
 	 <thread>
 	 <tr>
-	 <th>CONTEST CODE</th>
-	 <th>CONTEST NAME</th>
-	 <th scope="col" colspan="1">CONTEST LINK</th>
-	 <th>START TIME</th>
+	 <th><h2>CONTEST CODE</h2></th>
+	 <th><h2>CONTEST NAME</h2></th>
+	 <th scope="col" colspan="1"><h2>CONTEST LINK</h2></th>
+	 <th><h2>START TIME</h2></th>
 	 </tr>
 	 </thread>
 	 <tbody>
@@ -24,7 +33,7 @@
 	<tr>
 	    <td><h3>{{ contest.contest_code }}</h3></td>
 		<td><h3>{{ contest.contest_name }}</h3></td>
-		<td><a href={{contest.contest_link}}>Go to Contest</a></td>
+		<td><a href={{contest.contest_link}}><h3>Go to Contest</h3></a></td>
 		<td><h3>{{ contest.contest_start }}</h3></td>
 	</tr>
 	{% endfor %}
@@ -32,5 +41,9 @@
 	</table>
 </body>
 </html>
+
+
+
+
 
 
